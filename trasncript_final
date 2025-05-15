@@ -1,0 +1,195 @@
+couldn't open "transcript": permission denied
+# Reading pref.tcl
+# //  Questa Sim-64
+# //  Version 2023.3 win64 Jul 17 2023
+# //
+# //  Copyright 1991-2023 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+cd {//thoth.cecs.pdx.edu/Home06/suggu/Desktop/MIPS_project}
+ls
+# final_proj_trace.txt     pipeline_timing_forward.sv  tracetest.txt  
+# non_pipeline.sv          run.do                      vsim.wlf       
+# pipeline_non_forward.sv  top.sv                      work           
+do run.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# QuestaSim-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 16:25:35 on Jun 05,2024
+# vlog -reportprogress 300 non_pipeline.sv "+acc" 
+# -- Compiling module non_pipeline
+# 
+# Top level modules:
+# 	non_pipeline
+# End time: 16:25:36 on Jun 05,2024, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 16:25:36 on Jun 05,2024
+# vlog -reportprogress 300 pipeline_non_forward.sv "+acc" 
+# -- Compiling module pipeline_non_forward
+# 
+# Top level modules:
+# 	pipeline_non_forward
+# End time: 16:25:36 on Jun 05,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 16:25:36 on Jun 05,2024
+# vlog -reportprogress 300 pipeline_timing_forward.sv "+acc" 
+# -- Compiling module pipeline_forward
+# 
+# Top level modules:
+# 	pipeline_forward
+# End time: 16:25:37 on Jun 05,2024, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 16:25:37 on Jun 05,2024
+# vlog -reportprogress 300 top.sv "+acc" 
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# End time: 16:25:37 on Jun 05,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim work.top 
+# Start time: 16:25:37 on Jun 05,2024
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.top(fast)
+# Loading work.non_pipeline(fast)
+# Loading work.pipeline_non_forward(fast)
+# Loading work.pipeline_forward(fast)
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fscanf'.
+#    Time: 0 ns  Iteration: 0  Region: /top/DUT1/file_block File: non_pipeline.sv Line: 64
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fscanf'.
+#    Time: 0 ns  Iteration: 0  Region: /top/DUT2/file_block File: pipeline_non_forward.sv Line: 71
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fscanf'.
+#    Time: 0 ns  Iteration: 0  Region: /top/DUT3/file_block File: pipeline_timing_forward.sv Line: 71
+# ** Note: $finish    : top.sv(18)
+#    Time: 34150 ns  Iteration: 1  Instance: /top
+# 1
+# Break in Module top at top.sv line 18
+quit -sim
+# ************************** FUNCTIONAL SIMULATOR **************************************************
+# PC                           : 112
+# Total Number of Instructions  : 911
+# Arithmatic instructions       : 375
+# Logical instructions          : 61
+# Memory Access instructions    : 300
+# Control Transfer Instructions : 175
+# Branches taken                : 119
+# ***************************************************************************************************
+#                                                                                                         
+#                                                                                                         
+#                                                                                                         
+#                                                                                                         
+#                                                                                                         
+#                                                                                                         
+# **************************FINAL REGISTER VALUES **************************************************
+# R[0]  : 0
+# R[11]  : 1044
+# R[12]  : 1836
+# R[13]  : 2640
+# R[14]  : 25
+# R[15]  : -188
+# R[16]  : 213
+# R[17]  : 29
+# R[18]  : 3440
+# R[19]  : -1
+# R[20]  : -2
+# R[21]  : -1
+# R[22]  : 76
+# R[23]  : 3
+# R[24]  : -1
+# R[25]  : 3
+# Address:2400, contents:2
+# Address:2404, contents:4
+# Address:2408, contents:6
+# Address:2412, contents:8
+# Address:2416, contents:10
+# Address:2420, contents:12
+# Address:2424, contents:14
+# Address:2428, contents:16
+# Address:2432, contents:18
+# Address:2436, contents:29
+# Address:2440, contents:22
+# Address:2444, contents:24
+# Address:2448, contents:26
+# Address:2452, contents:28
+# Address:2456, contents:30
+# Address:2460, contents:32
+# Address:2464, contents:34
+# Address:2468, contents:36
+# Address:2472, contents:38
+# Address:2476, contents:59
+# Address:2480, contents:42
+# Address:2484, contents:44
+# Address:2488, contents:46
+# Address:2492, contents:48
+# Address:2496, contents:50
+# Address:2500, contents:52
+# Address:2504, contents:54
+# Address:2508, contents:56
+# Address:2512, contents:58
+# Address:2516, contents:89
+# Address:2520, contents:62
+# Address:2524, contents:64
+# Address:2528, contents:66
+# Address:2532, contents:68
+# Address:2536, contents:70
+# Address:2540, contents:72
+# Address:2544, contents:74
+# Address:2548, contents:76
+# Address:2552, contents:78
+# Address:2556, contents:119
+# Address:2560, contents:82
+# Address:2564, contents:84
+# Address:2568, contents:86
+# Address:2572, contents:88
+# Address:2576, contents:90
+# Address:2580, contents:92
+# Address:2584, contents:94
+# Address:2588, contents:96
+# Address:2592, contents:98
+# Address:2596, contents:149
+# Address:2600, contents:2
+# Address:2604, contents:4
+# Address:2608, contents:6
+# Address:2612, contents:8
+# Address:2616, contents:10
+# Address:2620, contents:12
+# Address:2624, contents:14
+# Address:2628, contents:16
+# Address:2632, contents:18
+# Address:2636, contents:29
+# ***************************************************************************************************
+#                                                                                                         
+#                                                                                                         
+#                                                                                                         
+#                                                                                                         
+# ***********************PIPELINE STATISTICS WITHOUT FORWARDING **********************************
+# Total Number of Clock cycles: 1707
+# Total Stalls                : 554
+# Data Hazards                : 307
+# ***************************************************************************************************
+#                                                                                                         
+#                                                                                                         
+#                                                                                                         
+#                                                                                                         
+#                                                                                                         
+# ******************************************PIPELINE FORWADING STATISTICS ****************************  
+# Total Number of Clock Cycles : 1213
+# Total Stalls : 60
+# Data Hazards : 60
+# ***************************************************************************************************
+# End time: 16:25:58 on Jun 05,2024, Elapsed time: 0:00:21
+# Errors: 0, Warnings: 4
